@@ -1,5 +1,19 @@
 import React from 'react';
- 
-const LandingPage = () => <h1>Feel free to write into your dairy</h1>;
+import { Link } from 'react-router-dom';
+
+const LandingPage = () => (
+  <React.Fragment>
+    <div className="container">
+      <div className="row">
+        <div className="col-12 jumbotron mx-auto bg-landingpage">
+          <p>Write about anything!!!</p>
+          <Link exact to="login">
+            <button className="btn theme-btn">Add an Entry</button>
+          </Link>
+        </div>
+      </div>
+    </div>
+  </React.Fragment>
+);
 
 export default LandingPage;
