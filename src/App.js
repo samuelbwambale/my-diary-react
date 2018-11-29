@@ -1,6 +1,8 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Routes from './components/routes/Index';
 import Footer from './components/layout/Footer';
 import NavBar from './components/layout/NavBar';
@@ -12,7 +14,10 @@ const App = () => (
     <BrowserRouter>
       <React.Fragment>
         <NavBar />
-        <Routes />
+        <div>
+          <ToastContainer />
+          <Routes />
+        </div>
         <Footer />
       </React.Fragment>
     </BrowserRouter>

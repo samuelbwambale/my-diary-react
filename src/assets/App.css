@@ -19,13 +19,28 @@ body {
 .bg-landingpage { 
     color: black;
     background-image: url('./images/book-pen.jpg');
-    height: 600px; 
+    height: 400px; 
     width: 600px;
     text-align: center;
     color: rgb(190, 151, 151);
     background-position: center;
     background-repeat: repeat;
     background-size: cover;
+}
+.bg-login { 
+  color: black;
+  background-image: url('./images/book-pen.jpg');
+  height: 100px; 
+  width: 600px;
+  text-align: center;
+  color: rgb(190, 151, 151);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+.thick {
+  font-weight: bold;
+  color: black;
 }
 .footer-bg {
     color: black;
@@ -41,7 +56,6 @@ body {
     color: black;
     background-color: rgb(247, 211, 211);
 }
-
 .theme-btn:hover,
 .theme-btn:focus,
 .theme-btn:active,
@@ -56,4 +70,14 @@ body {
 }
 .nav-bg {
     background-color: rgb(247, 211, 211);
-  }
+}
+.redirect-login {
+    color: rgb(247, 211, 211);
+    font-weight: bold;
+}
+.redirect-login:hover{
+  color: black
+}
+.centered {
+  display: block
+}
