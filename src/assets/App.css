@@ -22,7 +22,6 @@ body {
     height: 400px; 
     width: 600px;
     text-align: center;
-    color: rgb(190, 151, 151);
     background-position: center;
     background-repeat: repeat;
     background-size: cover;
@@ -32,12 +31,20 @@ body {
   background-image: url('./images/book-pen.jpg');
   height: 100px; 
   width: 600px;
-  text-align: center;
   color: rgb(190, 151, 151);
   background-position: center;
   background-repeat: repeat;
   background-size: cover;
 }
+.registerForm {
+  margin: 120px auto;
+  width: 400px;
+  padding: 40px;
+  background: #f5f5f5;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+  border-radius: 10px;
+  }
 .thick {
   font-weight: bold;
   color: black;
@@ -45,7 +52,7 @@ body {
 .footer-bg {
     color: black;
     position: fixed;
-    background-color: rgb(247, 211, 211);
+    background-color: powderblue;
     text-align: center;
     padding: 10px 20px 10px 20px;
     width: 100%;
@@ -54,30 +61,38 @@ body {
 
 .theme-btn {
     color: black;
-    background-color: rgb(247, 211, 211);
+    background-color: powderblue;
 }
 .theme-btn:hover,
 .theme-btn:focus,
 .theme-btn:active,
 .theme-btn.active {
   color: white;
-  border-color: #24292e;
-  background-color: #24292e;
+  background-color: rgb(190, 151, 151);
 }
-.nav-bar-text {
+.nav-bar-brand-text {
     color: black;
     font-weight: bold;
 }
-.nav-bg {
-    background-color: rgb(247, 211, 211);
+.nav-bar-brand-text:hover {
+  color: rgb(190, 151, 151);
 }
-.redirect-login {
-    color: rgb(247, 211, 211);
-    font-weight: bold;
+.nav-bg {
+    background-color: powderblue;
+    color: black
+}
+.theme-text{
+  color: black;
+}
+.theme-text:hover{
+  color: rgb(190, 151, 151);
 }
 .redirect-login:hover{
-  color: black
+  color: rgb(190, 151, 151);
 }
 .centered {
   display: block
+}
+.center-text{
+  text-align: center
 }

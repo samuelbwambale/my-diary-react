@@ -14,10 +14,9 @@ const RegisterForm = ({
 
 }) => (
   <div className="container">
-    <div className="row">
-      <Loader loaded={!loading}>
-        <div className="col-12">
-          <div className="bg-login" />
+    <Loader loaded={!loading}>
+      <div className="row">
+        <div className="col-12 bg-login">
           <form id="register-form" className="registerForm mt-5" onSubmit={handleSubmit}>
             <h3 className="text-center">Register</h3>
             <div className="form-group">
@@ -58,12 +57,12 @@ const RegisterForm = ({
             </div>
             <button className="btn btn-block theme-btn" type="submit" value="Submit">Submit</button>
             <div className="form-group">
-              <Link className="redirect-login" exact to="/login">Have an account?</Link>
+              <Link className="theme-text center-text" exact to="/login">Have an account?</Link>
             </div>
           </form>
         </div>
-      </Loader>
-    </div>
+      </div>
+    </Loader>
   </div>
 );
 
