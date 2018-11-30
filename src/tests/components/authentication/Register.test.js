@@ -14,6 +14,7 @@ describe('Register component', () => {
     history: { push: jest.fn() },
     registerUser: jest.fn(),
     handleChange: jest.fn(),
+    handleSubmit: jest.fn(),
   };
   const getEvent = (name = '', value = '') => ({
     preventDefault: jest.fn(),
@@ -30,11 +31,9 @@ describe('Register component', () => {
     />);
   });
 
-
   it('should render correctly', () => {
     expect(wrapper).toMatchSnapshot();
   });
-
 
   it('should call registerUser action when handleSubmit is called', () => {
     wrapper.instance().handleSubmit(getEvent());
