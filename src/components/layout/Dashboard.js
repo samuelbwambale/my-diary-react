@@ -5,7 +5,7 @@ const Dashboard = () => (
     <div className="container">
       <div className="row">
         <div className="col-12 jumbotron mx-auto bg-landingpage">
-          <p>This is the Dashboard!!!</p>
+          <p className="mt-5 thick">This is the Dashboard!!!</p>
         </div>
       </div>
     </div>

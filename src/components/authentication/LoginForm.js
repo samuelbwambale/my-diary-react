@@ -12,19 +12,27 @@ const LoginForm = ({
 
 }) => (
   <div className="container">
-    <div className="row">
-      <Loader loaded={!loading}>
-        <div className="col-12">
-          <div className="bg-login" />
-          <form id="login-form" className="registerForm mt-5" onSubmit={handleSubmit}>
-            <h3 className="text-center">Login</h3>
+    <Loader loaded={!loading}>
+      <div className="row">
+        <div className="col-12 bg-login">
+          <form className="registerForm" id="login-form" onSubmit={handleSubmit}>
+            <h3 className="text-center"> Log in </h3>
             <div className="form-group">
               <label className="control-label" htmlFor="email">Email</label>
               <div className="input-group mb-2">
                 <div className="input-group-prepend">
                   <div className="input-group-text"><i className="fas fa-envelope" /></div>
                 </div>
-                <input type="text" name="email" className="form-control" id="email" value={email} onChange={handleChange} required />
+                <input
+                  type="email"
+                  id="email"
+                  className="form-control"
+                  name="email"
+                  value={email}
+                  placeholder="Enter email address"
+                  onChange={handleChange}
+                  required
+                />
               </div>
             </div>
             <div className="form-group">
@@ -33,17 +41,28 @@ const LoginForm = ({
                 <div className="input-group-prepend">
                   <div className="input-group-text"><i className="fas fa-key" /></div>
                 </div>
-                <input type="password" className="form-control" name="password" id="password" value={password} onChange={handleChange} required />
+                <input
+                  type="password"
+                  id="password"
+                  className="form-control"
+                  name="password"
+                  value={password}
+                  placeholder="Enter password"
+                  onChange={handleChange}
+                  required
+                />
               </div>
             </div>
-            <button className="btn btn-block theme-btn" type="submit" value="Submit">Submit</button>
+            <button id="login_submit" type="submit" className="btn theme-btn btn-block">
+              Login
+            </button>
             <div className="form-group">
-              <Link className="redirect-login" exact to="/signup">Have no account?</Link>
+              <Link className="theme-text center-text" exact to="/forgotPassword">Have no account?</Link>
             </div>
           </form>
         </div>
-      </Loader>
-    </div>
+      </div>
+    </Loader>
   </div>
 );
 
