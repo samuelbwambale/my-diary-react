@@ -2,4 +2,6 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/bb80b932bec5ef1ede3d/maintainability)](https://codeclimate.com/github/samuelbwambale/my-diary-react/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/bb80b932bec5ef1ede3d/test_coverage)](https://codeclimate.com/github/samuelbwambale/my-diary-react/test_coverage)
 
-# my-diary-react
+# My-Diary React App
+
+Heroku app here: https://simple-app-my-diary-react.herokuapp.com/
