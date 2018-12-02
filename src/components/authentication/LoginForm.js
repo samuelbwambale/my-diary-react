@@ -57,7 +57,7 @@ const LoginForm = ({
               Login
             </button>
             <div className="form-group">
-              <Link className="theme-text center-text" exact to="/forgotPassword">Have no account?</Link>
+              <Link className="theme-text center-text" exact to="/signup">Have no account?</Link>
             </div>
           </form>
         </div>
