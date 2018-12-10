@@ -26,6 +26,16 @@ body {
     background-repeat: repeat;
     background-size: cover;
 }
+.bg-dashboard { 
+  color: black;
+  background-image: url('./images/book-pen.jpg');
+  height: 200px; 
+  width: 600px;
+  text-align: center;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
 .bg-login { 
   color: black;
   background-image: url('./images/book-pen.jpg');
@@ -95,4 +105,12 @@ body {
 }
 .center-text{
   text-align: center
+}
+.large-text {
+  font-size: 300%;
+  color: rgb(190, 151, 151);
+  font-family: Times, serif;
+}
+.title{
+  color: rgb(190, 151, 151);
 }
