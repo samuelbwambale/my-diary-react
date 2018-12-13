@@ -13,7 +13,7 @@ The application uses Redux to manage the store
 
 #### Application API
 
-The application consumes an API which is a Python application found here: https://simple-app-my-diary-react.herokuapp.com/
+The application consumes an API which is a Python application found here: https://simple-app-my-diary.herokuapp.com/
 
 ### Main application features
 - Users can create an account
